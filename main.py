@@ -15,11 +15,8 @@ bot.remove_command('help')
 warn_embed_dict = {
     "title": "**$USERNAME DEJA DE SPAMEAR**",
     "description": "has sido advertido por spam, por favor detente!",
-    #"thumbnail": "$GUILDICON",
     "timestamp": False,
     "color": 0x7289da,
-    #"footer": {"text": "$BOTNAME", "icon_url": "$BOTAVATAR"},
-    #"author": {"name": "$GUILDNAME", "icon_url": "$GUILDICON"},
     "fields": [
         {"name": "advertencias:", "value": "$WARNCOUNT", "inline": False},
         {"name": "expulsiones totales:", "value": "$KICKCOUNT", "inline": False},
