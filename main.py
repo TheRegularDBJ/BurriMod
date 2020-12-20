@@ -7,10 +7,8 @@ from AntiSpam import AntiSpamHandler
 intents = discord.Intents.default()
 intents.members = True
 intents.guilds = True
-intents.reactions = True
 
-BOT_PREFIX='%'
-bot=commands.Bot(command_prefix=BOT_PREFIX, intents=intents)
+bot=commands.Bot(command_prefix="%", intents=intents)
 bot.remove_command('help')
 warn_embed_dict = {
     "title": "**$USERNAME DEJA DE SPAMEAR**",
